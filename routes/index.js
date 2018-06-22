@@ -4,8 +4,8 @@ var knex = require('../db/knex.js');
 var bcrypt = require('bcrypt')
 
 /* GET home page. */
-router.get('/login', function(req, res, next) {
-  return "test";
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Test' });
 });
 
 module.exports = router;
